@@ -1,5 +1,8 @@
 package code.q1528;
 
+/**
+ * Tag Sort
+ */
 public class ShuffleString {
     public static String restoreString(String s, int[] indices) {
         char[] arr = new char[s.length()];
