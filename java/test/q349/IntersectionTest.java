@@ -6,8 +6,8 @@ import java.util.Arrays;
 
 public class IntersectionTest {
     public static void main(String[] args) {
-        int[] nums2 = {1,2,2,1};
-        int[] nums1 = {2,2};
+        int[] nums2 = {8,0,3};
+        int[] nums1 = {0,0};
 
         int[] nums = Intersection.intersection3(nums1, nums2);
 

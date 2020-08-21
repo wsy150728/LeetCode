@@ -1,5 +1,9 @@
 package code.q1370;
 
+/**
+ * Tag Sort
+ * Tag String
+ */
 public class SortString {
     public static String sortString(String s) {
         int[] count = new int[26];

@@ -43,30 +43,36 @@ public class Intersection {
         return Arrays.copyOf(nums, x);
     }
 
-    // {8,0,3} {0,0} 不通过，需要思考为啥
-//    public static int[] intersection3(int[] nums1, int[] nums2) {
-//        int[] nums = new int[nums1.length];
-//        int x = 0;
-//
-//        for (int i = 0; i < nums1.length; i++) {
-//            for (int j = 0; j < nums2.length; j++) {
-//                if ((nums2[j] == nums1[i]) && !contains(nums, nums2[j])) {
-//                    nums[x++] = nums2[j];
-//                    break;
-//                }
-//            }
-//        }
-//
-//        return Arrays.copyOf(nums, x);
-//    }
-//
-//    private static boolean contains(int[] a, int s) {
-//        for (int i : a) {
-//            if (i == s) {
-//                return true;
-//            }
-//        }
-//
-//        return false;
-//    }
+    // 针对0的特殊情况需要处理
+    public static int[] intersection3(int[] nums1, int[] nums2) {
+        int[] nums = new int[nums1.length];
+        int x = 0;
+        boolean flag = true;
+        for (int i = 0; i < nums1.length; i++) {
+            for (int j = 0; j < nums2.length; j++) {
+                // 0的情况要特殊处理,因为初始化的nums中包含了0
+                if(nums2[j] == nums1[i] && nums2[j] == 0 && flag){
+                    nums[x++] = 0;
+                    flag = false;
+                    break;
+                }
+                if ((nums2[j] == nums1[i]) && !contains(nums, nums2[j])) {
+                    nums[x++] = nums2[j];
+                    break;
+                }
+            }
+        }
+
+        return Arrays.copyOf(nums, x);
+    }
+
+    private static boolean contains(int[] a, int s) {
+        for (int i : a) {
+            if (i == s) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
