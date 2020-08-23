@@ -1,5 +1,9 @@
 package code.q922;
 
+/**
+ * Tag Sort
+ * Tag Array
+ */
 public class SortArrayByParityII {
     public static int[] sortArrayByParityII(int[] A) {
         int[] odd = new int[A.length/2];

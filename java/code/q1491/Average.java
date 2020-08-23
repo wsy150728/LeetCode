@@ -2,6 +2,10 @@ package code.q1491;
 
 import java.util.Arrays;
 
+/**
+ * Tag Sort
+ * Tag Array
+ */
 public class Average {
     public static double average(int[] salary) {
         double sum = 0;
