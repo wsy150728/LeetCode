@@ -10,7 +10,7 @@ public class MinSubsequenceTest {
 //        int[] nums = {4, 4, 7, 6, 7};
         int[] nums = {8, 8};
 
-        List<Integer> res = MinSubsequence.minSubsequence(nums);
+        List<Integer> res = MinSubsequence.minSubsequence1(nums);
 
         System.out.println(res);
     }
