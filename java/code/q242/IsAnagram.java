@@ -1,8 +1,11 @@
 package code.q242;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
+/**
+ * Tag Sort
+ * Tag Hash Table
+ */
 public class IsAnagram {
     // 利用数组排序后对比实现
     public static boolean isAnagram(String s, String t) {
