@@ -1,8 +1,5 @@
 package code.q349;
 
-import com.sun.tools.javac.util.ArrayUtils;
-import sun.security.util.ArrayUtil;
-
 import java.util.*;
 
 public class Intersection {
