@@ -1,10 +1,8 @@
 package test.q1305;
 
-import code.q1122.RelativeSortArray;
 import code.q1305.GetAllElements;
 import code.q1305.TreeNode;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class GetAllElementsTest {
@@ -17,7 +15,8 @@ public class GetAllElementsTest {
         root2.left = new TreeNode(0);
         root2.right = new TreeNode(3);
 
-        List<Integer> nums = GetAllElements.getAllElements(root1, root2);
+        GetAllElements model = new GetAllElements();
+        List<Integer> nums = model.getAllElements(root1, root2);
 
         System.out.println(nums.toString());
     }
