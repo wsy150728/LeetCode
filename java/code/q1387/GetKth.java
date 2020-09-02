@@ -49,17 +49,51 @@ public class GetKth {
         return res;
     }
 
+// ======================================================分割线========================================================
 
-    public static int getKth1(int lo, int hi, int k) {
-        PriorityQueue<int[]> heap = new PriorityQueue<>((o1,o2) -> o1[1] == o2[0] ? o2[0] - o1[0] : o2[1] - o1[1]);
 
-        for (int i = lo; i <= hi; i++) {
-            heap.offer(new int[]{i,getWeight(i)});
-//            if(heap.size() > k){
-//                heap.poll();
-//            }
+    private Map<Integer, Integer> memo;
+
+    private int getWeight1(int num) {
+        if (num == 1) {
+            return 0;
         }
 
+        if (memo.containsKey(num)) {
+            return memo.get(num);
+        }
+
+        int count = (num & 1) == 0 ? getWeight(num >>> 1) : getWeight(3 * num + 1);
+        count++;
+        memo.put(num, count);
+        return count;
+    }
+
+
+    /**
+     * java 优先队列 + 记忆化
+     * @param lo
+     * @param hi
+     * @param k
+     * @return
+     */
+    public int getKth1(int lo, int hi, int k) {
+        // 权重相同时,比较数值大小,权重不同时比较权重
+        // 逆向为从大到小排列,poll取队首,则第k个就是队首那个
+        PriorityQueue<int[]> heap = new PriorityQueue<>((o1, o2) -> o1[1] == o2[1] ? o2[0] - o1[0] : o2[1] - o1[1]);
+
+        memo = new HashMap<>();
+
+        for (int i = lo; i <= hi; i++) {
+            heap.add(new int[]{i, getWeight1(i)});
+            if (heap.size() > k) {
+                heap.poll();
+            }
+        }
+//        for (int[] x : heap){
+//            System.out.println(Arrays.toString(x));
+//        }
+//
         return heap.peek()[0];
     }
 
