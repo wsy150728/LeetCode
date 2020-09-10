@@ -12,7 +12,7 @@ public class InsertSortListTest {
         listNode.next.next.next = new ListNode(3);
 
         InsertSortList model = new InsertSortList();
-        ListNode res = model.insertSortList(listNode);
+        ListNode res = model.insertSortList2(listNode);
 
         System.out.println(res);
     }

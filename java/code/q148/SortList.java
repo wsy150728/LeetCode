@@ -1,29 +1,36 @@
 package code.q148;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 /**
  * Tag Sort
  * Tag Linked List
  */
 public class SortList {
-    // 利用数组排序后对比实现
+    // 归并排序（递归法）
     public ListNode sortList(ListNode head) {
-        ListNode res = new ListNode(1);
-        List<Integer> list = new ArrayList<>();
-        while (head != null){
-            list.add(head.val);
-            head = head.next;
+        if (head == null || head.next == null)
+            return head;
+        ListNode fast = head.next, slow = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
-
-        Collections.sort(list);
-        for (int x:list){
-            res.val = x;
-            res = res.next;
+        ListNode tmp = slow.next;
+        slow.next = null;
+        ListNode left = sortList(head);
+        ListNode right = sortList(tmp);
+        ListNode h = new ListNode(0);
+        ListNode res = h;
+        while (left != null && right != null) {
+            if (left.val < right.val) {
+                h.next = left;
+                left = left.next;
+            } else {
+                h.next = right;
+                right = right.next;
+            }
+            h = h.next;
         }
-
-        return res;
+        h.next = left != null ? left : right;
+        return res.next;
     }
 }
