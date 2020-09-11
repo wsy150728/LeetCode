@@ -1,7 +1,9 @@
 package code.q969;
 
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Tag Sort
@@ -53,14 +55,6 @@ public class PancakeSort {
     }
 
     public void reverse(int[] arr, int right) {
-//        int left = 0 ;
-//        while (left < right){
-//            int temp = arr[left];
-//            arr[left] = arr[right];
-//            arr[right] = temp;
-//            left ++;
-//            right --;
-//        }
         int x= right + 1;
         for (int i = 0; i <= x/2;i++){
             int temp = arr[i];
@@ -69,51 +63,6 @@ public class PancakeSort {
             right--;
         }
     }
-
-//    public static List<Integer> pancakeSort(int[] A) {
-//        List<Integer> list = new ArrayList<>();
-//        int index = A.length - 1;
-//        while (index >= 0){
-//            int maxIndex = findMaxIndex(A,index);
-//            if (maxIndex != index){
-//                list.add(maxIndex + 1);
-//                pancake(A,maxIndex + 1);
-//                list.add(index + 1);
-//                pancake(A,index + 1);
-//            }
-//            index --;
-//        }
-//        while (list.contains(new Integer(1)))
-//            list.remove(new Integer(1));
-//        while (list.contains(new Integer(0)))
-//            list.remove(new Integer(0));
-//
-//        return list;
-//    }
-//
-//    public static void pancake(int[] arr , int count){
-//        int left = 0 ;
-//        int right = count - 1;
-//        while (left < right){
-//            int temp = arr[left];
-//            arr[left] = arr[right];
-//            arr[right] = temp;
-//            left ++;
-//            right --;
-//        }
-//    }
-//
-//    public static int findMaxIndex(int[] arr , int right){
-//        int max = 0 ;
-//        int maxIndex = 0;
-//        for (int i = 0 ; i <= right ; i ++){
-//            if (arr[i] > max){
-//                max = arr[i];
-//                maxIndex = i;
-//            }
-//        }
-//        return maxIndex;
-//    }
 
 
 

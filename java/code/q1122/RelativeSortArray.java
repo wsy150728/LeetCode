@@ -1,6 +1,8 @@
 package code.q1122;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Tag Sort

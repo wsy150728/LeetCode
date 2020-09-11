@@ -1,6 +1,5 @@
 package test.q1561;
 
-import code.q1528.ShuffleString;
 import code.q1561.MaxCoins;
 
 public class MaxCoinsTest {

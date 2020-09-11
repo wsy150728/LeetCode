@@ -1,7 +1,6 @@
 package test.q1356;
 
 import code.q1356.SortByBits;
-import code.q922.SortArrayByParityII;
 
 import java.util.Arrays;
 
