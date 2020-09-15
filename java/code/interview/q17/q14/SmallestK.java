@@ -22,8 +22,20 @@ public class SmallestK {
     }
 
     public int[] smallestK2(int[] arr, int k) {
-        PriorityQueue<Integer> mapHeap = new PriorityQueue<>((a,b)->b-a);
-        for ()
+        int[] res = new int[k];
+
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b)->b-a);
+
+        for (int i = 0;i < arr.length; i++){
+            if(maxHeap.peek() > arr[i]){
+                maxHeap.poll();
+                maxHeap.offer(arr[i]);
+            }
+        }
+
+        for (int i = 0;i<k;i++){
+            res[i] = maxHeap.poll();
+        }
 
         return res;
     }

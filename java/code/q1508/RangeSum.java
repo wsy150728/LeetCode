@@ -8,7 +8,7 @@ import java.util.Arrays;
  */
 public class RangeSum {
     public int rangeSum(int[] nums, int n ,int left, int right) {
-
+        return 1;
     }
 
 }
