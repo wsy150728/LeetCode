@@ -11,7 +11,7 @@ public class NextGreaterElementTest {
 
         NextGreaterElement model = new NextGreaterElement();
 
-        int[] res = model.nextGreaterElement(nums1, nums2);
+        int[] res = model.nextGreaterElement2(nums1, nums2);
 
         System.out.println(Arrays.toString(res));
     }
