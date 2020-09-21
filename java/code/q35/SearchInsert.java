@@ -27,7 +27,7 @@ public class SearchInsert {
      * @param target
      * @return
      */
-    public int searchInsert(int[] nums, int target) {
+    public int searchInsert2(int[] nums, int target) {
         int left = 0;
         int right = nums.length;
         int mid = nums.length / 2;
