@@ -9,7 +9,7 @@ public class SearchInsertTest {
         int target = 7;
 
         SearchInsert model = new SearchInsert();
-        int res = model.searchInsert(nums, target);
+        int res = model.searchInsert2(nums, target);
 
         System.out.println(res);
     }

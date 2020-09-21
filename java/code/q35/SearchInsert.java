@@ -29,20 +29,20 @@ public class SearchInsert {
      */
     public int searchInsert2(int[] nums, int target) {
         int left = 0;
-        int right = nums.length;
-        int mid = nums.length / 2;
+        int right = nums.length - 1;
+        int ans = nums.length;
 
-        while (){
-            /**
-             * 比目标数小，则找右边
-             * 比目标数大，则找左边
-             */
-            if(nums[mid] < target){
-                left = mid;
+        while (left <= right){
+            int mid = left + (right - left) / 2;
+            if(nums[mid] >= target){
+                ans = mid;
+                right = mid - 1;
             }else {
-                right = mid;
+                left = mid + 1;
             }
         }
+
+        return ans;
     }
 
 }
