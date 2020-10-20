@@ -8,8 +8,7 @@ public class RemoveElement {
             if(v == val){
                 continue;
             }
-            nums[i] = v;
-            i++;
+            nums[++i] = v;
             len++;
         }
         return len;
