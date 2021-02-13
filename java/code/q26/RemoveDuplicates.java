@@ -1,7 +1,5 @@
 package code.q26;
 
-import java.util.Arrays;
-
 public class RemoveDuplicates {
     public int removeDuplicates(int[] nums) {
         int index = 0;
