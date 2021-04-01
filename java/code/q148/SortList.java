@@ -7,8 +7,9 @@ package code.q148;
 public class SortList {
     // 归并排序（递归法）
     public ListNode sortList(ListNode head) {
-        if (head == null || head.next == null)
+        if(head == null || head.next == null){
             return head;
+        }
         ListNode fast = head.next, slow = head;
         while (fast != null && fast.next != null) {
             slow = slow.next;
