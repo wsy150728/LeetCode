@@ -1,19 +1,21 @@
 package test.tree;
 
-import code.sort.BubbleSort;
+import code.tree.PreOrderTraversal;
+import code.tree.TreeNode;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author wangshengyi
  */
 public class PreOrderTraversalTest {
     public static void main(String[] args) {
-        int[] piles = {9,8,7,6,5,1,2,3,4};
+        TreeNode root = new TreeNode(1,null,new TreeNode(2,new TreeNode(3),null));
 
-        BubbleSort model = new BubbleSort();
-        int[] output = model.bubbleSort(piles);
+        PreOrderTraversal model = new PreOrderTraversal();
+        List<Integer> output = model.preOrderTraversal(root);
 
-        System.out.println(Arrays.toString(output));
+        System.out.println(output);
     }
 }
