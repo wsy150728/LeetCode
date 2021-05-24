@@ -1,7 +1,6 @@
 package test.q42;
 
 
-import code.q35.SearchInsert;
 import code.q42.Trap;
 
 public class TrapTest {

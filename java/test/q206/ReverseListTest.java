@@ -13,7 +13,7 @@ public class ReverseListTest {
         head.next.next.next.next = new ListNode(5);
 
         ReverseList model = new ReverseList();
-        ListNode res = model.reverseList1(head);
+        ListNode res = model.reverseList(head);
 
         while (res != null){
             System.out.println(res.val);
