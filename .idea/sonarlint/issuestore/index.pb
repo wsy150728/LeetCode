@@ -119,3 +119,47 @@ N
 java/code/q226/InvertTree.java,0/8/08383af4efd0059fee7a4fd49ebd0b70485cc5d5
 R
 "java/test/q226/InvertTreeTest.java,e/7/e7417d94f31e817b542758410c6424839599ee57
+P
+ java/test/q1491/AverageTest.java,b/2/b27a084333c3f03d74ae479296d041c3aa448698
+S
+#java/code/q5/LongestPalindrome.java,0/3/036faebd24e07caace7e05cce7c2b62f4e96d096
+J
+java/code/q11/MaxArea.java,b/f/bfe594bc4aed843fa896d606c6e55e0ff7e90152
+O
+java/test/q15/ThreeSumTest.java,3/e/3e9a0ff10c067abcc65ef2c613f680cdb0ac1d83
+K
+java/code/q15/ThreeSum.java,9/b/9bb78c05b68b407280b68a43bf251837e49be854
+U
+%java/code/q17/LetterCombinations.java,d/2/d238bccc8d2fd09217711b29c3f2694bc2282557
+Z
+*java/code/q3/LengthOfLongestSubstring.java,e/9/e90dfa431876356ef34f967a2028f7228177e35a
+Y
+)java/test/q17/LetterCombinationsTest.java,f/1/f1f6f6c12da91d1c2229aee45636b254d3531de0
+S
+#java/code/q19/RemoveNthFromEnd.java,f/5/f5a9f506eebfd52f089caf8dd622a34614782090
+J
+java/code/q20/IsValid.java,9/9/99dfc3bfa2d3c77eab495780cc89a8683aeede87
+K
+java/code/q19/ListNode.java,6/e/6ee3ad7aeda0d84f643e8e672f235368676e6c96
+N
+java/test/q20/IsValidTest.java,e/5/e56f215df419825dfac8147c8eb5599cc3dfdc8b
+O
+java/code/q2/AddTwoNumbers.java,6/b/6b9706773fe1b19b5637a4ce7603c5489e25da95
+K
+java/code/q21/ListNode.java,2/f/2f4522ca6350e8252feeaa31035e2cb5a829e389
+T
+$java/test/q21/MergeTwoListsTest.java,8/0/8051ba14b96213959950ce9fc948325ab445fc91
+P
+ java/code/q21/MergeTwoLists.java,5/8/586b4f1bef54586b8cbdf9982494c3d2873d269f
+[
++java/test/q22/GenerateParaenthesisTest.java,3/0/3009291dc34c2d0a1acb8e144ad39f23bad2b8d9
+V
+&java/code/q22/GenerateParenthesis.java,a/0/a0caef4f9a84186885b12da4cfbf08ebf7e92926
+K
+java/code/q23/ListNode.java,c/a/ca5c504b655bcbe26420dd1e9c15aa25061b4c43
+N
+java/code/q23/MergeKLists.java,6/4/64a559873085d5f252e325935e0b01bf13d3752f
+V
+&java/test/q31/NextPermutationTest.java,5/8/5856f857fdf57f425243b0a305f7e8f35cae3a4d
+R
+"java/code/q31/NextPermutation.java,6/4/6443e7c83924b579c220481eaa262457e63a25ad
