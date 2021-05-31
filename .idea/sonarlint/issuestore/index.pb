@@ -163,3 +163,13 @@ V
 &java/test/q31/NextPermutationTest.java,5/8/5856f857fdf57f425243b0a305f7e8f35cae3a4d
 R
 "java/code/q31/NextPermutation.java,6/4/6443e7c83924b579c220481eaa262457e63a25ad
+Z
+*java/code/q32/LongestValidParentheses.java,5/a/5aa021223f0a95c9c8d3cbae15ac19ab54e53c7e
+U
+%java/test/q39/CombinationSumTest.java,c/6/c641503996bd1cce78e1e61991b230f8bdb40b59
+Q
+!java/code/q39/CombinationSum.java,5/a/5a8b9efa3df1450b4c5a117327b2f6cb3e0df169
+M
+java/test/q46/PrmuteTest.java,3/8/3849599dd2439718f40d0ade97edee007fe3c1bc
+J
+java/code/q46/Permute.java,d/6/d664787b2027ca79ef0ea148d57114b82d13178a
