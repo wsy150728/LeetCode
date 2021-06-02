@@ -173,3 +173,19 @@ M
 java/test/q46/PrmuteTest.java,3/8/3849599dd2439718f40d0ade97edee007fe3c1bc
 J
 java/code/q46/Permute.java,d/6/d664787b2027ca79ef0ea148d57114b82d13178a
+I
+java/code/q48/Rotate.java,7/3/734d39b044ec5447a6bc42c37dade5314342a9a6
+M
+java/test/q48/RotateTest.java,2/d/2d4bb8db1a7ad8ca0fd286955189ef724f44605d
+T
+$java/test/q49/GroupAnagramsTest.java,c/0/c0ea81c43586d2c2b1adf57274bca035baeaae38
+P
+ java/code/q49/GroupAnagrams.java,5/d/5d0d22ebe03d140419117592164fe63f5b24f500
+R
+"java/test/q53/MaxSubArrayTest.java,9/3/934142ef884418109e0e980757f90d6eed9b49a9
+N
+java/code/q53/MaxSubArray.java,6/5/656794bfc18eec5ae49f597bb1f44d479ad9a8b5
+N
+java/test/q55/CanJumpTest.java,a/3/a35e5c29dc55b52ed81282499751e58c46aeb308
+J
+java/code/q55/CanJump.java,d/b/db5ddf09b857855549a043c169e976823501fa3b
