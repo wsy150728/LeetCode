@@ -21,11 +21,11 @@ public class SmallestK {
         return res;
     }
 
-    public int[] smallestK2(int[] arr, int k) {
-        PriorityQueue<Integer> mapHeap = new PriorityQueue<>((a,b)->b-a);
-        for ()
-
-        return res;
-    }
+//    public int[] smallestK2(int[] arr, int k) {
+//        PriorityQueue<Integer> mapHeap = new PriorityQueue<>((a,b)->b-a);
+//        for ()
+//
+//        return res;
+//    }
 
 }
